@@ -1,52 +1,169 @@
 body{
 
+margin:0;
+
+font-family:Arial;
+
 background:linear-gradient(#ffd6e0,#c6e6ff);
-font-family:Comic Sans MS;
 
 display:flex;
+
 justify-content:center;
+
 align-items:center;
 
 height:100vh;
 
 }
 
-.box{
+.container{
 
 background:white;
-padding:40px;
-border-radius:20px;
-text-align:center;
-width:350px;
 
-box-shadow:0 10px 20px rgba(0,0,0,0.1);
+width:420px;
+
+padding:20px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+
+text-align:center;
+
+}
+
+.avatar{
+
+font-size:40px;
+
+margin-bottom:10px;
+
+}
+
+.subtitle{
+
+font-size:14px;
+
+color:#666;
+
+}
+
+#chat{
+
+height:260px;
+
+overflow-y:auto;
+
+background:#f8f8f8;
+
+border-radius:10px;
+
+padding:10px;
+
+margin:10px 0;
+
+}
+
+.message{
+
+padding:10px;
+
+border-radius:10px;
+
+margin:6px;
+
+max-width:70%;
+
+}
+
+.user{
+
+background:#cce5ff;
+
+margin-left:auto;
+
+}
+
+.bot{
+
+background:#ffe6f0;
+
+}
+
+.controls{
+
+display:flex;
+
+gap:10px;
 
 }
 
 input{
 
+flex:1;
+
 padding:10px;
-width:80%;
+
 border-radius:10px;
+
 border:1px solid #ccc;
 
 }
 
 button{
 
-margin-top:15px;
-padding:10px 20px;
+padding:10px 15px;
+
 border:none;
+
+background:#ff8cc8;
+
+color:white;
+
 border-radius:10px;
 
-background:#ff9ecf;
-color:white;
 cursor:pointer;
 
 }
 
-#output{
+.reportBtn{
 
-margin-top:20px;
-font-weight:bold;
+margin-top:10px;
+
+width:100%;
+
+background:#6bb3ff;
+
+}
+
+.meter{
+
+height:12px;
+
+background:#eee;
+
+border-radius:10px;
+
+overflow:hidden;
+
+}
+
+#meterFill{
+
+height:100%;
+
+width:0%;
+
+background:#ff6bb5;
+
+transition:width 1s;
+
+}
+
+.typing{
+
+font-style:italic;
+
+color:#777;
+
 }
