@@ -2,26 +2,63 @@
 <html>
 
 <head>
-<title>SafeTalk</title>
+
+<title>Healing AI 🌸</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<div class="box">
+<div class="container">
 
-<h1>SafeTalk 🌸</h1>
-<p>This is a safe space. Share how you're feeling.</p>
+<h1>Healing AI 🌸</h1>
 
-<input id="input" placeholder="Type your feelings">
+<p class="subtitle">Your emotional support assistant</p>
 
-<button onclick="roast()">Share 💙</button>
+<div class="avatar" id="avatar">🙂</div>
 
-<div id="output"></div>
+<div class="meterBox">
+
+<div class="meter">
+
+<div id="meterFill"></div>
 
 </div>
+
+</div>
+
+<div id="chat"></div>
+
+<div class="controls">
+
+<input id="input" placeholder="Share your feelings">
+
+<button onclick="send()">Send</button>
+
+</div>
+
+<div class="sliderBox">
+
+<label>Brutality Level</label>
+
+<input type="range" min="1" max="3" value="2" id="brutality">
+
+</div>
+
+<button onclick="downloadReport()" class="reportBtn">
+Download Psychological Report
+</button>
+
+</div>
+
+<audio id="roastSound">
+<source src="https://assets.mixkit.co/sfx/preview/mixkit-video-game-mystery-alert-234.wav">
+</audio>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
